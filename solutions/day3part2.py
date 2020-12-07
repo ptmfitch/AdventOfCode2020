@@ -1,5 +1,5 @@
 slope = []
-with open("inputs/day3.txt") as input_file:
+with open("../inputs/day3.txt") as input_file:
     for line in input_file:
         slope.append(line)
 width = len(slope[0]) - 1

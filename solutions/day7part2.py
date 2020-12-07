@@ -1,7 +1,7 @@
 import re
 
 rule_dict = {}
-with open("inputs/day7.txt") as input_file:
+with open("../inputs/day7.txt") as input_file:
     for line in input_file:
         rule_match = re.match(r'^([a-z]+ [a-z]+) bags contain (.*?)\.$', line.rstrip())
         parent_bag = rule_match.group(1)

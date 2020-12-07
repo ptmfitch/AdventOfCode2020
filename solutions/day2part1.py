@@ -12,7 +12,7 @@ def valid_password(mn, mx, char, password):
 
 
 count = 0
-with open('inputs/day2.txt') as input_file:
+with open('../inputs/day2.txt') as input_file:
     for line in input_file:
         match = re.match(input_regex, line)
         if valid_password(int(match.group(1)), int(match.group(2)), match.group(3), match.group(4)):
